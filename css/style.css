@@ -1,34 +1,24 @@
 .exp-block {
-    padding: 10px 20px 30px 5px;
-    border: 1px solid;
-    margin: 10px;
-    /* margin: 10px -10px; */
-    /* width: 500px; */
-    max-width: 600px;
-    min-width: 500px;
-    /* min-height: 100px; */
-    /* height: 10px; */
-    max-height: 20px;
-    box-sizing:border-box;
-    overflow: auto;
-    
-
+    font-size: 20px;
+    border: 2px solid #000;   
+    margin: 20px 5px; 
+    border-radius: 20px 0 20px 0;
+    /* border-radius: 50%;
+    width: 200px;
+    height: 200px; */
+    overflow: hidden;
+    outline: 1px dashed red;
+    box-shadow: 5px 5px 10px 5px #2bad66, inset 5px 5px 10px 5px #404e77;
+    opacity: 0.8;
+    /* visibility: hidden; */
 }
 .str-block {
-    display: inline-block;
-    padding: 20px;
-    width: 500px;
-    border: 1px solid black;
-    margin-bottom: 20px;
+    font-size: 20px;
+    outline: 1px dashed #000;
 }
 .example-img{
-    /* width: 200px; */
-    
-   
-    width: 100%;
-    max-width: 500px;
-    min-width: 200px;
-    
-    min-height: 300px;
+    margin-top: 20px;
+    border-top: 1px dotted #000;
 }
+
 
