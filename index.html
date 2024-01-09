@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags explorer 2</title>
+    <title>Tags explorer forms 3</title>
 </head>
 <body>
-   <h1>Content h1 tag</h1> 
-   <h2>Content h1 tag</h2> 
-   <h3>Content h1 tag</h3> 
-   <h4>Content h1 tag</h4> 
-   <h5>Content h1 tag</h5> 
-   <h6>Content h1 tag</h6> 
-   <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ipsum quo facilis. Deserunt exercitationem inventore soluta enim corrupti aut sit deleniti fuga voluptatem voluptatum, temporibus at molestias ipsam, earum illo?</p>
-   <p>2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ipsum quo facilis. Deserunt exercitationem inventore soluta enim corrupti aut sit deleniti fuga voluptatem voluptatum, temporibus at molestias ipsam, earum illo?</p>
-   <span>content tag span #1</span>
-   <span>content tag span #2</span>
-   <span>content tag span #3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus officiis provident odit reiciendis, deleniti ut et facilis similique sequi at fugiat qui ipsum harum expedita earum laboriosam sit quia.</span>
-    <br><br>   
-   <span>Error block tag dont contain string bplock like span!!!! content tag span #3 <div>Content div tag</div> asdasdasdasd</span>
-   <br><br>   
-    <a href="https://google.ru" target="_blank">Content tag a</a>
-    <br><br>   
-
-    <img src="img/pexels-the-cactusena-18148613.jpg" width="300px" alt="no picture">
-    <ul>
-        <li>Content tag ul li</li>
-        <li>Content tag ul li</li>
-        <li>Content tag ul li</li>
-    </ul>
-    <ol>
-        <li>Content tag ol li</li>
-        <li>Content tag ol li</li>
-        <li>Content tag ol li</li>
-    </ol>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div><input placeholder="username" type="text" name="username" value=""></div>
+        <div><input type="password" name="userpass"> </div>
+        <div>
+            <p><input checked type="radio" name="beer" value="lager">Ligth beer</p>
+            <p><input type="radio" name="beer" value="dark">Dark beer</p>
+        </div>
+        <div>
+            <p><input type="radio" name="beer2" value="lager">Ligth beer</p>
+            <p><input type="radio" name="beer2" value="dark">Dark beer</p>
+        </div>
+        <div>
+            <p><input type="checkbox" name="car" value="true"> Cars 1</p>
+            <p><input checked type="checkbox" name="car2" value="yes"> Cars 2</p>
+            <p><input type="checkbox" name="car3" value="yes"> Cars 3</p>
+            <p><input type="checkbox" name="car4" value="yes"> Cars 4</p>
+        </div>
+        <div><input type="file" name="foto" ></div>
+        <br>
+        <div>
+            <textarea name="text" ></textarea>
+        </div>
+        <div>
+            <select name="color" >
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
 </body>
 </html>
