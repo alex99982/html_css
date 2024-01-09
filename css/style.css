@@ -1,0 +1,27 @@
+div{
+
+}
+
+span.big-red{
+    font-size: 15px;
+    color: green;
+}
+
+.big-red{
+    font-size: 20px;
+    font-size: 10px;
+    color: red;
+}
+
+.block{
+    border: solid;
+    color: brown;
+}
+
+.block>p{
+    color: blue;
+}
+
+.block>div>p{
+    color: aqua;
+}
