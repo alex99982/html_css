@@ -1,46 +1,34 @@
-.arial{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.exp-block {
+    padding: 10px 20px 30px 5px;
+    border: 1px solid;
+    margin: 10px;
+    /* margin: 10px -10px; */
+    /* width: 500px; */
+    max-width: 600px;
+    min-width: 500px;
+    /* min-height: 100px; */
+    /* height: 10px; */
+    max-height: 20px;
+    box-sizing:border-box;
+    overflow: auto;
+    
+
+}
+.str-block {
+    display: inline-block;
+    padding: 20px;
+    width: 500px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.example-img{
+    /* width: 200px; */
+    
+   
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    
+    min-height: 300px;
 }
 
-.fontSize30{
-    font-size: 30px;
-}
-
-.italic{
-    font-style: italic;
-}
-.font700{
-    font-weight: 700;
-}
-.color_red{
-    color: #f00f00;    
-}
-.textright{
-    text-align: justify;
-}
-.decor{
-    text-decoration: underline;
-}
-.shadow{
-    text-shadow: 1px 1px 10px #f00f00 ;
-}  
-.uppercase{
-    text-transform: capitalize;
-} 
-.ident{
-    text-indent: 50px;
-}
-
-.lspace{
-    letter-spacing: 5px;
-}
-.wspace{
-    word-spacing: 10px;
-}
-.whitespace{
-    white-space: normal;    
-}
-
-.lineheight{
-    line-height: 25px;
-}
