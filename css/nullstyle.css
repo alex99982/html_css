@@ -69,48 +69,4 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
-}
-
-.link:hover, .link-2 {
-  border-bottom: 5px dashed red;
-}
-
-.tplorderClass, .link {
-  border-bottom: 5px dotted rgb(36, 51, 103);
-}
-
-.link-2 {
-  font-size: 55px;
-  color: rgb(13, 5, 36);
-}
-
-.block {
-  width: 31.25%;
-  background-color: aqua;
-  font-size: 18px;
-  line-height: 35px;
-}
-.block > p {
-  color: red;
-}
-.block span {
-  color: green;
-}
-.block .block_text {
-  font-size: 35px;
-}
-.block.block--small {
-  font-size: 15px;
-}
-
-.link {
-  color: blue;
-  text-decoration: underline;
-  font-size: 20px;
-}
-.link:hover {
-  color: green;
-}
-.block .link {
-  font-size: 45px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=nullstyle.css.map */

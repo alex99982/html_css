@@ -1,0 +1,68 @@
+//Импорт
+@import "nullstyle.scss";
+//Переменные
+$fz: 35px;
+$color1:#000;
+$color2:#fff;
+//Шаблоны
+%tplorder{
+    border-bottom: 5px dashed red;
+}
+//Шаблоны классов
+.tplorderClass{
+    border-bottom: 5px dotted rgb(36, 51, 103);
+}
+//Миксины
+@mixin fontsz($f){
+    font-size: $f;
+    color: rgb(13, 5, 36);
+}
+
+.link-2 {
+    // font-size: 35px; 
+    @extend %tplorder;
+    @include fontsz(55px)
+} 
+//Вложенность
+.block {
+    //Математика
+    width: 300px/960px *100%;
+    background-color: aqua;
+    font-size: 18px;
+    line-height: $fz;
+
+    >p {
+        color: red;
+    }
+
+    span {
+        color: green;
+    }
+
+    .block_text {
+        font-size: $fz;
+    }
+
+    &.block--small {
+        font-size: 15px;
+    }
+}
+//and 
+.link {
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+    //ШАблон класс
+    @extend .tplorderClass;
+    //and 
+    &:hover {
+        color: green;
+        //ШАблон
+        @extend %tplorder;
+    }
+    //and 
+    .block & {
+        font-size: 45px;
+    }    
+}
+
