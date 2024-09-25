@@ -1,62 +1,67 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
+	<!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>META теги</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Кодировка страницы -->
+		<!-- С появлением HTML5 можно использовать  -->
+		<meta charset="UTF-8">
+		<!-- Настройки адаптивности страницы  -->
+		<!-- Адаптивность  -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- Отключает формирование ссылки у номера телефона на iOS -->
+		<meta name="format-detection" content="telephone=no">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Краткое описание страницы  -->
+		<meta name="description" content="Что такое мета теги и для чего они нужны">
+		<!-- Ключевые слова страницы  -->
+		<meta name="keywords" content="мета теги, meta, мета теги для seo"> 
 
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"> -->
+		<!-- Управление доступом поисковых роботов к странице -->
+		<!-- Запрет индексации страницы полностью -->
+		<meta name="robots" content="none">
 
+		<!-- Автор страницы -->
+		<meta name="Author" content="Дарт Вейдер"> 
+		<!-- Авторские права -->
+		<meta name="Copyright" content="Люк Скайуокер"> 
+		<!-- Адрес автора -->
+		<meta name="Address" content="Татуин, кратер №97">
 
-  <link rel="stylesheet" href="css/cleanStyle.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>css 5 CSS padding. CSS margin. CSS display.</title>
+		<!-- локализация сайта, для русскоязычного сайта ru_RU -->
+		<meta property="og:locale" content="ru_RU">
+		<!-- тип контента, по умолчанию используется article -->
+		<meta property="og:type" content="article">
+		<!-- заголовок страницы, который будет выводится в записи социальной сети -->
+		<meta property="og:title" content="META теги">
+		<!-- описание страницы -->
+		<meta property="og:description" content="Описание страницы про META теги">
+		<!-- ссылка на изображение, которое будет публиковаться в записи -->
+		<meta property="og:image" content="http://fls.guru/meta/img/bg.jpg">
+		<!-- ссылка на текущую страницу -->
+		<meta property="og:url" content="http://fls.guru/meta/ ">
+		<!-- название сайта -->
+		<meta property="og:site_name" content="Фрилансер по жизни">
 
-</head>
-
-<body>
-    <div class="about">
-      <div class="about__body">
-          <div class="about__header">
-            <div class="about__title title">ABOUT</div>
-            <div class="about__text">We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor. 
-              In our design process, we make sure to stay one step ahead of the latest trends, 
-              never forgetting to abide by key web standards</div>
-          </div>
-          <div class="about__row">
-            <div class="about__column">
-                <div class="item-about">
-                  <div class="item-about__icon">
-                    <img src="/img/about/01.png" alt="img1">
-                  </div>
-                  <div class="item-about__title">Web</div>
-                  <div class="item-about__text">We tend to deliver unique and functional design, through innovation and creativity.</div>
-                </div>
-            </div>
-            <div class="about__column">
-              <div class="item-about">
-                <div class="item-about__icon">
-                  <img src="/img/about/02.png" alt="img1">
-                </div>
-                <div class="item-about__title">iOS AND ANDROID</div>
-                <div class="item-about__text">We seek to bring new businesses and customers closer together through valuable insights and proper targeting.</div>
-              </div>
-            </div>
-            <div class="about__column">
-              <div class="item-about">
-                <div class="item-about__icon">
-                  <img src="/img/about/03.png" alt="img1">
-                </div>
-                <div class="item-about__title">MARKETING</div>
-                <div class="item-about__text">We’ll help you establish the right goals and build the right paths. Success depends on setting the right intention.</div>
-              </div>
-            </div>
-          </div>
-      </div>      
-    </div>
-</body>
-
+		<!-- Тип карты, по умолчанию используется summary -->
+		<meta name="twitter:card" content="summary">
+		<!-- Имя/логин автора -->
+		<meta name="twitter:site" content="Жека">
+		<!-- Название страницы -->
+		<meta name="twitter:title" content="META теги">
+		<!-- Описание страницы -->
+		<meta name="twitter:description" content="про META теги">
+		<!-- Cсылка на изображение -->
+		<meta name="twitter:image" content="http://fls.guru/meta/img/bg.jpg">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<h1>Привет! Это Фрилансер по жизни!</h1>
+		<h2>Давай знакомиться c META тегами!</h2>
+	</body>
 </html>
