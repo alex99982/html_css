@@ -1,68 +1,19 @@
-//Импорт
-@import "nullstyle.scss";
-//Переменные
-$fz: 35px;
-$color1:#000;
-$color2:#fff;
-//Шаблоны
-%tplorder{
-    border-bottom: 5px dashed red;
-}
-//Шаблоны классов
-.tplorderClass{
-    border-bottom: 5px dotted rgb(36, 51, 103);
-}
-//Миксины
-@mixin fontsz($f){
-    font-size: $f;
-    color: rgb(13, 5, 36);
-}
 
-.link-2 {
-    // font-size: 35px; 
-    @extend %tplorder;
-    @include fontsz(55px)
-} 
-//Вложенность
-.block {
-    //Математика
-    width: 300px/960px *100%;
-    background-color: aqua;
-    font-size: 18px;
-    line-height: $fz;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-    >p {
-        color: red;
-    }
-
-    span {
-        color: green;
-    }
-
-    .block_text {
-        font-size: $fz;
-    }
-
-    &.block--small {
-        font-size: 15px;
-    }
-}
-//and 
-.link {
-    color: blue;
-    text-decoration: underline;
+.text-original{
+    
     font-size: 20px;
-    //ШАблон класс
-    @extend .tplorderClass;
-    //and 
-    &:hover {
-        color: green;
-        //ШАблон
-        @extend %tplorder;
+    line-height: 25px;
+    p {
+        margin-bottom: 30px;
     }
-    //and 
-    .block & {
-        font-size: 45px;
-    }    
 }
-
+.text {
+    font-family: "PT Sans";
+    font-size: 20px;
+    line-height: 25px;
+    p {
+        margin-bottom: 30px;
+    }
+}
