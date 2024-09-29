@@ -1,49 +1,53 @@
-.wrap{
-    min-height: 100%;
-    justify-content: center; /* Выравнивание по горизонтали */
-    align-items: center;
-    display: flex;
+.wrapper {
+    background-color: black;
 }
-
-.button{   
-    /* padding: 10px 20px;
-    border-radius: 23px;
-    background-color: aquamarine;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8); */
-    text-decoration: none;
-    display: inline-block;
-    line-height: 60px;
-    padding: 0px 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 18px;
-    border-radius: 10px;
-    top: 0;
+.content {
+    padding: 50px;
+}
+.content:hover .content__circle {
+    animation-play-state: paused;
+}
+.content__circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
     position: relative;
-    
-}
-.button1{
-    color: #fff;
-    background-color: #5e5373;
-    box-shadow: 0 5px 0px #3c354a;
-    transition-duration: 0.5s, 100ms,100ms;
-    /* transition-property: all; */
-    transition-property: background-color,top,box-shadow;
-    transition-delay: 0s, 0.5s, 0.5s;
-    /* transition-timing-function: ease;
-    transition-timing-function: ease-in;
-    transition-timing-function: ease-in-out;
-    transition-timing-function: ease-out; */
-
-/*property| duration| transition-timing-function| delay| */
-    /* transition: all 1s ease 0.5s; */
-    transition: top 0.2s ease 0s, box-shadow 0.5s ease 0.5s
+    left: 0;
+    background-color: #fff;
+    animation-name: white-circle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate-reverse; */
+    /* animation-direction:reverse */
+    /* animation-direction:alternate; */
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+/* duration | animation-timing-function| animation-iteration-count|animation-direction| animation-delay |animation-fill-mode*/
+    /* animation: white-circle 1s linear infinite alternate 0s forwards; */
+    animation: white-circle 1s linear infinite alternate 0s forwards,  red-circle 5s ease infinite alternate 0s forwards
 }
 
-.button1:hover{
-    transition: all 1s ease 0.5s;
-    top: 2px;
-    box-shadow: 0 3px 0px #3c354a;
-    background-color: #18b5a4;
-    /* width: 600px; */
+@keyframes white-circle {
+    0% {
+        left:0
+    }
+    50%{
+        border-radius: 0;
+    }
+    100% {
+        left: 500px;
+    }
+}
+
+@keyframes red-circle {
+    0% {
+        background-color: #fff;
+    }
+    50%{
+        background-color: red;
+    }
+    100% {
+        background-color: #fff;
+    }
 }
